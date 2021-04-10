@@ -1,0 +1,9 @@
+CREATE TABLE users (
+  id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  username varchar(80) NOT NULL,
+  password varchar(80) NOT NULL,
+  name varchar(80) NOT NULL,
+  email varchar(80) NOT NULL
+);
+
+ALTER TABLE users ADD CONSTRAINT UNIQUE (email)
